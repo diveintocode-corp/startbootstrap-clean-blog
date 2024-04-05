@@ -1,0 +1,4 @@
+[ZoneTransfer]
+ZoneId=3
+ReferrerUrl=https://bulma.io/
+HostUrl=https://objects.githubusercontent.com/github-production-release-asset-2e65be/50264296/c4bcd984-a6f7-484f-900d-11e663e13624?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20231115%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231115T151242Z&X-Amz-Expires=300&X-Amz-Signature=256e41313ac1557f1d9b5897a4221d4f40f4858ae7937c383c492b8e27a3134f&X-Amz-SignedHeaders=host&actor_id=147282001&key_id=0&repo_id=50264296&response-content-disposition=attachment%3B%20filename%3Dbulma-0.9.4.zip&response-content-type=application%2Foctet-stream
