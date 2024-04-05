@@ -5,3 +5,5 @@ const destPath = upath.resolve(upath.dirname(__filename), '../dist');
 
 sh.rm('-rf', `${destPath}/*`)
 
+
+

@@ -2397,71 +2397,98 @@ textarea.form-control-lg {
 .form-range:disabled::-moz-range-thumb {
   background-color: #adb5bd;
 }
-
+/* Estilos para formularios con etiquetas flotantes */
 .form-floating {
-  position: relative;
+  position: relative; /* Posición relativa para elementos hijos absolutos */
 }
+
+/* Estilos para la altura y línea de los elementos de formulario */
 .form-floating > .form-control,
 .form-floating > .form-control-plaintext,
 .form-floating > .form-select {
-  height: 4.5rem;
-  line-height: 1.25;
+  height: 4.5rem; /* Altura del campo de formulario */
+  line-height: 1.25; /* Altura de línea del campo de formulario */
 }
+
+/* Estilos para la etiqueta flotante */
 .form-floating > label {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  padding: 1.25rem 0;
-  overflow: hidden;
-  text-align: start;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  pointer-events: none;
-  border: 1px solid transparent;
-  transform-origin: 0 0;
-  transition: opacity 0.1s ease-in-out, transform 0.1s ease-in-out;
+  position: absolute; /* Posición absoluta para superponer la etiqueta */
+  top: 0; /* Alineación superior */
+  left: 0; /* Alineación a la izquierda */
+  width: 100%; /* Ocupar todo el ancho */
+  height: 100%; /* Ocupar toda la altura */
+  padding: 1.25rem 0; /* Espaciado interno */
+  overflow: hidden; /* Ocultar desbordamiento de texto */
+  text-align: start; /* Alineación de texto a la izquierda */
+  text-overflow: ellipsis; /* Texto que desborda se muestra como puntos suspensivos */
+  white-space: nowrap; /* No permitir saltos de línea */
+  pointer-events: none; /* No afectar eventos de puntero */
+  border: 1px solid transparent; /* Borde transparente */
+  transform-origin: 0 0; /* Transformación desde la esquina superior izquierda */
+  transition: opacity 0.1s ease-in-out, transform 0.1s ease-in-out; /* Transiciones suaves */
 }
+
+/* Deshabilitar transición de reducción de movimiento preferida */
 @media (prefers-reduced-motion: reduce) {
   .form-floating > label {
     transition: none;
   }
 }
+
+/* Estilos adicionales para el campo de formulario y etiqueta flotante */
 .form-floating > .form-control,
 .form-floating > .form-control-plaintext {
-  padding: 1.25rem 0;
+  padding: 1.25rem 0; /* Espaciado interno para el campo de formulario */
 }
-.form-floating > .form-control::-moz-placeholder, .form-floating > .form-control-plaintext::-moz-placeholder {
+
+/* Estilos para ocultar el marcador de posición en navegadores Mozilla */
+.form-floating > .form-control::-moz-placeholder,
+.form-floating > .form-control-plaintext::-moz-placeholder {
   color: transparent;
 }
+
+/* Estilos para ocultar el marcador de posición en navegadores compatibles con W3C */
 .form-floating > .form-control::placeholder,
 .form-floating > .form-control-plaintext::placeholder {
   color: transparent;
 }
-.form-floating > .form-control:not(:-moz-placeholder-shown), .form-floating > .form-control-plaintext:not(:-moz-placeholder-shown) {
+
+/* Ajustes adicionales cuando el campo de formulario no está vacío */
+.form-floating > .form-control:not(:-moz-placeholder-shown),
+.form-floating > .form-control-plaintext:not(:-moz-placeholder-shown) {
   padding-top: 2.125rem;
   padding-bottom: 0.625rem;
 }
-.form-floating > .form-control:focus, .form-floating > .form-control:not(:placeholder-shown),
+
+/* Ajustes adicionales cuando el campo de formulario tiene el foco o no está vacío */
+.form-floating > .form-control:focus,
+.form-floating > .form-control:not(:placeholder-shown),
 .form-floating > .form-control-plaintext:focus,
 .form-floating > .form-control-plaintext:not(:placeholder-shown) {
   padding-top: 2.125rem;
   padding-bottom: 0.625rem;
 }
+
+/* Ajustes adicionales para campos de formulario con autocompletado en navegadores Webkit */
 .form-floating > .form-control:-webkit-autofill,
 .form-floating > .form-control-plaintext:-webkit-autofill {
   padding-top: 2.125rem;
   padding-bottom: 0.625rem;
 }
+
+/* Ajustes adicionales para el campo de selección en la etiqueta flotante */
 .form-floating > .form-select {
   padding-top: 2.125rem;
   padding-bottom: 0.625rem;
 }
+
+/* Estilos de reducción de opacidad y transformación de la etiqueta flotante cuando el campo no está vacío */
 .form-floating > .form-control:not(:-moz-placeholder-shown) ~ label {
   opacity: 0.65;
   transform: scale(0.65) translateY(-0.5rem) translateX(0rem);
 }
+
+/* Estilos de reducción de opacidad y transformación de la etiqueta flotante cuando el campo tiene el foco o no está vacío */
 .form-floating > .form-control:focus ~ label,
 .form-floating > .form-control:not(:placeholder-shown) ~ label,
 .form-floating > .form-control-plaintext ~ label,
@@ -2469,10 +2496,14 @@ textarea.form-control-lg {
   opacity: 0.65;
   transform: scale(0.65) translateY(-0.5rem) translateX(0rem);
 }
+
+/* Estilos de reducción de opacidad y transformación de la etiqueta flotante cuando el campo tiene autocompletado en navegadores Webkit */
 .form-floating > .form-control:-webkit-autofill ~ label {
   opacity: 0.65;
   transform: scale(0.65) translateY(-0.5rem) translateX(0rem);
 }
+
+/* Estilos adicionales para la etiqueta flotante cuando el campo es de solo lectura */
 .form-floating > .form-control-plaintext ~ label {
   border-width: 1px 0;
 }
