@@ -61,49 +61,60 @@
                             <!-- To make this form functional, sign up at-->
                             <!-- https://startbootstrap.com/solution/contact-forms-->
                             <!-- to get an API token!-->
-                            <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                                <div class="form-floating">
-                                    <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
-                                    <label for="name">Name</label>
-                                    <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
-                                </div>
-                                <div class="form-floating">
-                                    <input class="form-control" id="email" type="email" placeholder="Enter your email..." data-sb-validations="required,email" />
-                                    <label for="email">Email address</label>
-                                    <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                                    <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
-                                </div>
-                                <div class="form-floating">
-                                    <input class="form-control" id="phone" type="tel" placeholder="Enter your phone number..." data-sb-validations="required" />
-                                    <label for="phone">Phone Number</label>
-                                    <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
-                                </div>
-                                <div class="form-floating">
-                                    <textarea class="form-control" id="message" placeholder="Enter your message here..." style="height: 12rem" data-sb-validations="required"></textarea>
-                                    <label for="message">Message</label>
-                                    <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
-                                </div>
-                                <br />
-                                <!-- Submit success message-->
-                                <!---->
-                                <!-- This is what your users will see when the form-->
-                                <!-- has successfully submitted-->
-                                <div class="d-none" id="submitSuccessMessage">
-                                    <div class="text-center mb-3">
-                                        <div class="fw-bolder">Form submission successful!</div>
-                                        To activate this form, sign up at
-                                        <br />
-                                        <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+
+
+<form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                            <div class="form-group row">
+                                <label for="name" class="col-sm-2 col-form-label">Nombre</label>
+                                <div class="col-sm-10">
+                                    <input class="form-control" id="name" type="text" placeholder="Ingrese su nombre"
+                                        data-sb-validations="required" />
+                                    <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.
                                     </div>
                                 </div>
-                                <!-- Submit error message-->
-                                <!---->
-                                <!-- This is what your users will see when there is-->
-                                <!-- an error submitting the form-->
-                                <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
-                                <!-- Submit Button-->
-                                <button class="btn btn-primary text-uppercase disabled" id="submitButton" type="submit">Send</button>
-                            </form>
+                            </div>
+                            <div class="form-group row">
+                                <label for="email" class="col-sm-2 col-form-label">Enter Email</label>
+                                <div class="col-sm-10">
+                                    <input class="form-control" id="email" type="email"
+                                        placeholder="Ingrese su Email" data-sb-validations="required,email" />
+                                    <div class="invalid-feedback" data-sb-feedback="email:required">An email is
+                                        required.</div>
+                                    <div class="invalid-feedback" data-sb-feedback="email:email">Email invalido.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="sex" class="col-sm-2 col-form-label">Sexo</label>
+                                <div class="col-sm-10">
+                                    <div class="form-check form-check-stacked">
+                                        <input class="form-check-input" type="radio" name="sex" id="sex-man" value="man"
+                                            checked>
+                                        <label class="form-check-label" for="sex-man">Hombre</label>
+                                    </div>
+                                    <div class="form-check form-check-stacked">
+                                        <input class="form-check-input" type="radio" name="sex" id="sex-woman"
+                                            value="woman">
+                                        <label class="form-check-label" for="sex-woman">Mujer</label>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="message" class="col-sm-2 col-form-label">Mensaje</label>
+                                    <div class="col-sm-10">
+
+                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                            placeholder="Ingrese su mensaje"></textarea>
+                                        <div class="invalid-feedback" data-sb-feedback="message:required">A message is
+                                            required.</div>
+                                    </div>
+                                </div>
+                                <br />
+                                <div class="float-left">
+                                    <button class="btn btn-primary btn-sm">Enviar</button>
+                                </div>
+                        </form>
+
+
                         </div>
                     </div>
                 </div>
