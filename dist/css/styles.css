@@ -91,6 +91,10 @@
   }
 }
 
+.text-original {
+  color: inherit; /* O el color específico que deseas */
+}
+
 body {
   margin: 0;
   font-family: var(--bs-body-font-family);
@@ -2152,7 +2156,7 @@ textarea.form-control-lg {
   border-radius: 0;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   -webkit-appearance: none;
-     -moz-appearance: none;
+      -moz-appearance: none;
           appearance: none;
 }
 @media (prefers-reduced-motion: reduce) {
@@ -2224,7 +2228,7 @@ textarea.form-control-lg {
   background-size: contain;
   border: 1px solid rgba(0, 0, 0, 0.25);
   -webkit-appearance: none;
-     -moz-appearance: none;
+      -moz-appearance: none;
           appearance: none;
   -webkit-print-color-adjust: exact;
           print-color-adjust: exact;
@@ -2318,7 +2322,7 @@ textarea.form-control-lg {
   padding: 0;
   background-color: transparent;
   -webkit-appearance: none;
-     -moz-appearance: none;
+      -moz-appearance: none;
           appearance: none;
 }
 .form-range:focus {
@@ -2369,7 +2373,7 @@ textarea.form-control-lg {
   -moz-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   -moz-appearance: none;
-       appearance: none;
+        appearance: none;
 }
 @media (prefers-reduced-motion: reduce) {
   .form-range::-moz-range-thumb {
@@ -8550,6 +8554,7 @@ textarea.form-control-lg {
   .d-md-flex {
     display: flex !important;
   }
+  
   .d-md-inline-flex {
     display: inline-flex !important;
   }
