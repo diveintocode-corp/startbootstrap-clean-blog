@@ -1,115 +1,110 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es"> <!-- Define el idioma del documento como español -->
     <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Clean Blog - Start Bootstrap Theme</title>
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
+        <meta charset="utf-8" /> <!-- Establece la codificación de caracteres en UTF-8 -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" /> <!-- Configura la vista para que se ajuste al ancho del dispositivo y permite el escalado -->
+        <meta name="description" content="" /> <!-- Meta descripción del sitio -->
+        <meta name="author" content="" /> <!-- Meta autor del sitio -->
+        <title>Blog Limpio - Tema de Inicio de Bootstrap</title> <!-- Título de la página -->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" /> <!-- Favicon del sitio -->
+        <!-- Iconos de Font Awesome (versión gratuita) -->
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
+        <!-- Fuentes de Google -->
         <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
+        <!-- CSS del tema principal (incluye Bootstrap) -->
         <link href="css/styles.css" rel="stylesheet" />
     </head>
     <body>
-        <!-- Navigation-->
+        <!-- Navegación -->
         <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
             <div class="container px-4 px-lg-5">
-                <a class="navbar-brand" href="index.html">Start Bootstrap</a>
+                <a class="navbar-brand" href="index.html">Inicio Bootstrap</a> <!-- Enlace de la marca del sitio -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    Menu
-                    <i class="fas fa-bars"></i>
+                    Menú
+                    <i class="fas fa-bars"></i> <!-- Icono del menú -->
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto py-4 py-lg-0">
-                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="about.html">About</a></li>
-                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="post.html">Sample Post</a></li>
-                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="index.html">Inicio</a></li> <!-- Enlace a la página de inicio -->
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="about.html">Sobre</a></li> <!-- Enlace a la página de "Sobre" -->
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="post.html">Publicación de Ejemplo</a></li> <!-- Enlace a la página de "Publicación de Ejemplo" -->
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="contact.html">Contacto</a></li> <!-- Enlace a la página de contacto -->
                     </ul>
                 </div>
             </div>
         </nav>
-        <!-- Page Header-->
+        <!-- Encabezado de la página -->
         <header class="masthead" style="background-image: url('assets/img/contact-bg.jpg')">
             <div class="container position-relative px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-md-10 col-lg-8 col-xl-7">
                         <div class="page-heading">
-                            <h1>Contact Me</h1>
-                            <span class="subheading">Have questions? I have answers.</span>
+                            <h1>Contáctame</h1>
+                            <span class="subheading">¿Tienes preguntas? Yo tengo respuestas.</span> <!-- Subtítulo de la página -->
                         </div>
                     </div>
                 </div>
             </div>
         </header>
-        <!-- Main Content-->
+        <!-- Contenido Principal -->
         <main class="mb-4">
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-md-10 col-lg-8 col-xl-7">
-                        <p>Want to get in touch? Fill out the form below to send me a message and I will get back to you as soon as possible!</p>
+                        <p>¿Quieres ponerte en contacto? Llena el formulario abajo para enviarme un mensaje y te responderé lo antes posible.</p>
                         <div class="my-5">
                             <!-- * * * * * * * * * * * * * * *-->
-                            <!-- * * SB Forms Contact Form * *-->
+                            <!-- * * Formulario de Contacto de SB * *-->
                             <!-- * * * * * * * * * * * * * * *-->
-                            <!-- This form is pre-integrated with SB Forms.-->
-                            <!-- To make this form functional, sign up at-->
+                            <!-- Este formulario está pre-integrado con SB Forms.-->
+                            <!-- Para hacer que este formulario funcione, regístrate en-->
                             <!-- https://startbootstrap.com/solution/contact-forms-->
-                            <!-- to get an API token!-->
-                            <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                                <div class="form-floating">
-                                    <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
-                                    <label for="name">Name</label>
-                                    <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
-                                </div>
-                                <div class="form-floating">
-                                    <input class="form-control" id="email" type="email" placeholder="Enter your email..." data-sb-validations="required,email" />
-                                    <label for="email">Email address</label>
-                                    <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                                    <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
-                                </div>
-                                <div class="form-floating">
-                                    <input class="form-control" id="phone" type="tel" placeholder="Enter your phone number..." data-sb-validations="required" />
-                                    <label for="phone">Phone Number</label>
-                                    <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
-                                </div>
-                                <div class="form-floating">
-                                    <textarea class="form-control" id="message" placeholder="Enter your message here..." style="height: 12rem" data-sb-validations="required"></textarea>
-                                    <label for="message">Message</label>
-                                    <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
-                                </div>
-                                <br />
-                                <!-- Submit success message-->
-                                <!---->
-                                <!-- This is what your users will see when the form-->
-                                <!-- has successfully submitted-->
-                                <div class="d-none" id="submitSuccessMessage">
-                                    <div class="text-center mb-3">
-                                        <div class="fw-bolder">Form submission successful!</div>
-                                        To activate this form, sign up at
-                                        <br />
-                                        <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                            <!-- para obtener un token de API-->
+                            <form>
+                                <div class="row mb-3">
+                                    <label for="inputname" class="col-sm-2 col-form-label">Nombre</label> <!-- Etiqueta para el nombre -->
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="inputname"> <!-- Campo de entrada para el nombre -->
                                     </div>
                                 </div>
-                                <!-- Submit error message-->
-                                <!---->
-                                <!-- This is what your users will see when there is-->
-                                <!-- an error submitting the form-->
-                                <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
-                                <!-- Submit Button-->
-                                <button class="btn btn-primary text-uppercase disabled" id="submitButton" type="submit">Send</button>
+                                <div class="row mb-3">
+                                    <label for="inputemail3" class="col-sm-2 col-form-label">Correo</label> <!-- Etiqueta para el correo -->
+                                    <div class="col-sm-10">
+                                        <input type="email" class="form-control" id="inputemail3"> <!-- Campo de entrada para el correo -->
+                                    </div>
+                                </div>
+                                <fieldset class="row mb-3">
+                                    <legend class="col-form-label col-sm-2 pt-0">Sexo</legend> <!-- Leyenda para el campo de sexo -->
+                                    <div class="col-sm-10">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked> <!-- Opción para hombre -->
+                                            <label class="form-check-label" for="gridRadios1">
+                                                Hombre
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2"> <!-- Opción para mujer -->
+                                            <label class="form-check-label" for="gridRadios2">
+                                                Mujer
+                                            </label>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                                <div class="row mb-3">
+                                    <label for="inputext" class="col-sm-2 col-form-label">Texto</label> <!-- Etiqueta para el texto -->
+                                    <div class="col-sm-10">
+                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea> <!-- Área de texto -->
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Enviar</button> <!-- Botón de envío -->
                             </form>
                         </div>
                     </div>
                 </div>
             </div>
         </main>
-        <!-- Footer-->
+        <!-- Pie de página -->
         <footer class="border-top">
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
@@ -119,7 +114,7 @@
                                 <a href="#!">
                                     <span class="fa-stack fa-lg">
                                         <i class="fas fa-circle fa-stack-2x"></i>
-                                        <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                        <i class="fab fa-twitter fa-stack-1x fa-inverse"></i> <!-- Icono de Twitter -->
                                     </span>
                                 </a>
                             </li>
@@ -127,7 +122,7 @@
                                 <a href="#!">
                                     <span class="fa-stack fa-lg">
                                         <i class="fas fa-circle fa-stack-2x"></i>
-                                        <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                                        <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i> <!-- Icono de Facebook -->
                                     </span>
                                 </a>
                             </li>
@@ -135,23 +130,23 @@
                                 <a href="#!">
                                     <span class="fa-stack fa-lg">
                                         <i class="fas fa-circle fa-stack-2x"></i>
-                                        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                        <i class="fab fa-github fa-stack-1x fa-inverse"></i> <!-- Icono de GitHub -->
                                     </span>
                                 </a>
                             </li>
                         </ul>
-                        <div class="small text-center text-muted fst-italic">Copyright &copy; Your Website 2023</div>
+                        <div class="small text-center text-muted fst-italic">Copyright &copy; Tu Sitio Web 2023</div> <!-- Información de copyright -->
                     </div>
                 </div>
             </div>
         </footer>
-        <!-- Bootstrap core JS-->
+        <!-- JavaScript principal de Bootstrap -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
+        <!-- JavaScript principal del tema -->
         <script src="js/scripts.js"></script>
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * Activa tu formulario en https://startbootstrap.com/solution/contact-forms * *-->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
     </body>
